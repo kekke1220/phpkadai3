@@ -1,0 +1,25 @@
+<!-- index.php -->
+<div class="jumbotron">
+    <legend>お気に入り登録</legend>
+    <label>建物名：<input type="text" name="name"></label><br>
+    <label>価格：<input type="text" name="price"></label><br>
+    <label>利回り：<input type="text" name="yield"></label><br>
+    <label>価格変更：<input type="text" name="pricechange"></label><br>
+    <label>掲載情報<input type="file" name="file"></label><br>
+    <input type="submit" value="登録">
+</div>
+
+
+
+
+<!-- detail.php -->
+<div class="jumbotron">
+    <legend>フリーアンケート</legend>
+    <label>建物名：<input type="text" name="name" value="<?= $result['name']?>"></label><br>
+    <label>価格：<input type="text" name="price" value="<?= $result['price']?>"></label><br>
+    <label>利回り：<input type="text" name="yield" value="<?= $result['yield']?>"></label><br>
+    <label>価格変更：<input type="text" name="pricechange" value="<?= $result['pricechange']?>"></label><br>
+    <label>掲載情報：<input type="file" name="file" value="<?= $result['file']?>"></label><br>
+    <input type="hidden" name="id" value="<?= $result['id']?>">
+    <input type="submit" value="更新">
+</div>

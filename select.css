@@ -1,0 +1,13 @@
+body { background:rgb(30,30,40); }
+
+p {
+    border: 2px solid gold;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+a {
+    color: white;
+}
